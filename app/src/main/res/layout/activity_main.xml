@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="txtfile open" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="save" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/filepicker"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Image open" />
+
+        <Button
+            android:id="@+id/boldtext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick()"
+            android:text="B"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/italictext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/boldtext"
+            android:onClick="onClick"
+            android:text="I"
+            android:textStyle="italic"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/normaltext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/italictext"
+            android:onClick="onClick"
+            android:text="N"
+            android:textStyle="normal"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/fontsize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/normaltext"
+            android:text="Size" />
+
+        <Button
+            android:id="@+id/copytext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fontsize"
+            android:text="Copy" />
+
+
+
+        <Button
+            android:id="@+id/newdoc"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/copytext"
+            android:text="new" />
+
+
+    </LinearLayout>
+</HorizontalScrollView>
+    <LinearLayout
+
+        android:background="#B44E3A"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:id="@+id/edittext1"/>
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:ems="10"
+                android:id="@+id/edittext2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image2"
+            android:src="@drawable/ic_vikas"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/mainpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="100"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:hint="Welcome to Notepoint"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/boldtext"
+        android:background="@color/editbordercolor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
